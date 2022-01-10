@@ -38,6 +38,33 @@ jupyter notebook
 
 It may take a moment to process, but when it is finished it should either give you a URL to paste into your browser or open the browser directly. This will open up the Jupyter application where you can view all files and notebooks that are located on scholar. You can use the `Upload` button in the top right hand corner to upload any files, images, etc. that you need for the assignment. 
 
+## Jupyter Extension
+
+If you would prefer to work directly in VS Code, you can install the Juypter Notebook extension via the extension manager. You can install this via the following steps:
+
+1. Click the panel on the lefthand side that has 4 squares with one of the squares ajar from the others
+2. Search for "Jupyter" in the search bar provided
+3. Click on the one that says Microosoft next to the installation button
+4. Install that extension
+5. You can now open Jupyter Notebook files and you will see a workable interface instead of the source code
+
+
+## Installation of Anaconda on the Class Server
+
+If you would prefer to work on the class server for some projects that is fine, however you will need to have Anaconda installed as many project require certian packages. You can install Anaconda using the following steps:
+
+1. Run the following code segment in a terminal window
+```
+wget https://repo.anaconda.com/archive/Anaconda3-2020.07-Linux-x86_64.sh
+```
+2. Run the following code segment after the first one
+```
+sh Anaconda3-2020.07-Linux-x86_64.sh
+```
+3. Follow the installation instructions (no changes are needed)
+4. Restart the terminal window
+5. For some reason `bash` is not starting properly on the class server, to fix this you will need to type `bash` when you open a new terminal window
+
 ## Submission Instruction
 
 Get all of the files that you need and this Jupyter Notebook into the same folder and then use the following command to zip the folder into a compressed folder where `filename.zip` is the name you want the zip file to have and `directory_name` is the name of the directroy with all of your files in it. Do not forget the `-r` option as the folder contents will not be added with out it.
