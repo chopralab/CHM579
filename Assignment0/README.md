@@ -12,7 +12,7 @@ After this, presse `ctrl+shift+p` or `command+shift+p` (on Mac) and type in `Rem
 ```
 Host scholar
     HostName scholar.rcac.purdue.edu
-    User [YourPurudeUsername]
+    User [YourPurdueUsername]
 Host sp001
     HostName 10.164.22.16
     User [firstname_lastname]
@@ -21,6 +21,14 @@ Host sp001
 Scholar is the server that you will do all of the course work on. It is a part of the Purdue cluster and has shared resources across all users. Sp001 is the class server that is owned our lab. It is where you will turn in all of your assignment. After adding these lines to the SSH config file, save and close out.
 
 Press `ctrl+shift+p` or `command+shift+p` (on Mac) and type in `Reomote-SSH: Connect to Host`. Choose the host `scholar` and then log in using Boiler Key. After connecting to scholar, you will need to download the zip file for assignment 0 and then upload it to your account on scholar. Click the two overlapping file icon on the left hand sidebar. Click `Open Folder` and then select your home directory and click `Ok`. You will need to log in again with Boiler Key. You can uploada file or folder by dragging it onto the sidebar and relasing it under the folder that you want it to reside in.
+
+## Jupyter Hub
+
+If you choose to work on the projects via the Jupyter Hub website you can do so by going to the following webpage (note that there may be some issues with certian extensions in the future)
+
+```
+https://notebook.scholar.rcac.purdue.edu/hub/login
+```
 
 ## Launching the Jupyter Notebook
 
@@ -74,3 +82,5 @@ $zip –r filename.zip directory_name
 ```
 
 Then, log onto `sp001` using VS Code and drag and drop the zip folder under your Assignment 1 directory. You can unzip the folder if you would like to check to see if everything is present, but you will not be able to run the Jupyter Notebook on this server. You do not need to unzip the folder as it will be transfered again prior to grading.
+
+If you would like to learn how to use SFTP, this can make the process far eaiser. You can transfer files directly between the class server and scholar using bash commands. See [this guide](https://www.digitalocean.com/community/tutorials/how-to-use-sftp-to-securely-transfer-files-with-a-remote-server) for help with SFTP.
